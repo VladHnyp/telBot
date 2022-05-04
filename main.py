@@ -25,34 +25,6 @@ def answer(call):
 
 
 
-"""@bot.message_handler()
-def get_usser_text(message):
-    if message.text == "Hello":
-        bot.send_message(message.chat.id, "Hi!")
-    elif message.text == "id":
-        bot.send_message(message.chat.id, f"Your ID: {message.from_user.id}")
-    elif message.text == "photo":
-        photo = open('deadpool2.png', 'rb')
-        bot.send_photo(message.chat.id, photo)
 
-@bot.message_handler(content_types=['photo'])
-def get_user_photo(message):
-    bot.send_message(message.chat.id, 'Wow, nice photo!')
-
-
-@bot.message_handler(commands=['website'])
-def website(message):
-    markup = types.InlineKeyboardMarkup()
-    markup.add(types.InlineKeyboardButton('Go to websise', url='https://google.com'))
-    bot.send_message(message.chat.id, 'Oue site', reply_markup=markup)
-
-
-@bot.message_handler(commands=['help'])
-def website(message):
-    markup = types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
-    website = types.InlineKeyboardButton('/website')
-    start = types.InlineKeyboardButton('/start')
-    markup.add(website, start)
-    bot.send_message(message.chat.id, 'helping...', reply_markup=markup)"""
 
 bot.polling(none_stop=True)
