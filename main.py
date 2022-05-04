@@ -23,8 +23,4 @@ def answer(call):
         bot.send_message(call.message.chat.id, 'Шкода😢')
 
 
-
-
-
-
 bot.polling(none_stop=True)
